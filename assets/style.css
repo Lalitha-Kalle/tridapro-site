@@ -387,4 +387,13 @@ h3{font-size:1.35rem}
   .hero{padding:48px 0 40px}
   .price-card,.card{padding:22px}
 }
+
+/* ---------- Legal pages ---------- */
+.legal-body{max-width:72ch}
+.legal-body h2{font-size:1.5rem;margin:2.4rem 0 .8rem}
+.legal-body h2:first-child{margin-top:0}
+.legal-body p,.legal-body li{color:var(--ink-soft);line-height:1.75;margin-bottom:.9rem}
+.legal-body ul{padding-left:1.3rem}
+.legal-note{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;font-size:.86rem;color:var(--ink-soft);margin-bottom:2.4rem}
+.legal-note b{color:var(--ink)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
