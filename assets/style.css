@@ -279,7 +279,7 @@ h3{font-size:1.35rem}
   background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px 26px 28px;
   text-align:center;display:flex;flex-direction:column;transition:.22s;position:relative;overflow:hidden;
 }
-.program::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 50% -10%,var(--gold-wash),transparent 60%);opacity:0;transition:.22s}
+.program::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 50% -10%,var(--gold-wash),transparent 60%);opacity:0;transition:.22s;pointer-events:none}
 .program:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold-soft)}
 .program:hover::before{opacity:1}
 .program .p-icon{
