@@ -193,6 +193,32 @@ h3{font-size:1.35rem}
 .stat .n em{color:var(--gold);font-style:normal}
 .stat .l{font-size:.84rem;color:var(--ink-soft);margin-top:.4rem;font-weight:500}
 
+/* ---------- Stats strip v2 (icon stats) ---------- */
+.stats2{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat2{text-align:center;padding:0 1.6rem;position:relative}
+.stat2:not(:last-child)::after{content:"";position:absolute;right:0;top:8px;bottom:8px;width:1px;background:var(--line)}
+.s2-icon{position:relative;width:78px;height:78px;margin:0 auto 1.15rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.s2-icon::before{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px dotted currentColor;opacity:.4}
+.s2-icon svg{width:32px;height:32px;position:relative}
+.s2-dot{position:absolute;top:0;right:4px;width:9px;height:9px;border-radius:50%;background:currentColor}
+.s2-n{font-family:var(--display);font-size:2.35rem;font-weight:700;line-height:1}
+.s2-n em{font-style:normal;font-size:.5em;font-weight:700;margin-left:.15em;vertical-align:baseline}
+.s2-bar{width:34px;height:3px;border-radius:3px;margin:.6rem auto .75rem;background:currentColor;opacity:.55}
+.s2-l{font-size:.92rem;color:var(--navy);font-weight:500;line-height:1.45}
+.s2-blue{color:#3B82F6}
+.s2-green{color:#10B981}
+.s2-orange{color:#F59E0B}
+.s2-purple{color:#8B5CF6}
+.s2-icon.s2-blue{background:rgba(59,130,246,.1)}
+.s2-icon.s2-green{background:rgba(16,185,129,.1)}
+.s2-icon.s2-orange{background:rgba(245,158,11,.1)}
+.s2-icon.s2-purple{background:rgba(139,92,246,.1)}
+@media (max-width:800px){
+  .stats2{grid-template-columns:repeat(2,1fr);row-gap:2.2rem}
+  .stat2:not(:last-child)::after{display:none}
+  .stat2:nth-child(odd)::after{content:"";position:absolute;right:0;top:8px;bottom:8px;width:1px;background:var(--line);display:block}
+}
+
 /* ---------- Steps ---------- */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
 .step{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px;position:relative}
@@ -375,7 +401,8 @@ h3{font-size:1.35rem}
 
 /* ---------- Hero v1 ---------- */
 .hero2{padding:60px 0 70px;position:relative;overflow:hidden}
-.hero2 .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center}
+.hero2 .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center}
+.hero2-visual{margin-top:-72px}
 .hero2 h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.02;letter-spacing:-.02em;font-weight:600}
 .hero2 h1 .g{color:var(--gold)}
 .hero2 .tick{width:90px;height:5px;background:var(--gold);border-radius:99px;margin:1.4rem 0}
@@ -387,9 +414,10 @@ h3{font-size:1.35rem}
 .hero2-cta{display:flex;gap:.8rem;flex-wrap:wrap}
 .hero2-visual{position:relative}
 .hero2-blob{position:absolute;inset:-8% -4% -8% 6%;background:radial-gradient(circle at 60% 45%,var(--gold-soft),var(--gold-wash) 55%,transparent 72%);border-radius:50%;z-index:0}
-.hero2-photo{position:relative;z-index:1;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3.4;background:linear-gradient(160deg,#EFE7D4,#E4DAC2);border:1px solid var(--line);display:grid;place-items:center;box-shadow:var(--shadow-lg)}
+.hero2-photo{position:relative;z-index:1;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3.6;background:linear-gradient(160deg,#EFE7D4,#E4DAC2);border:1px solid var(--line);display:grid;place-items:center;box-shadow:var(--shadow-lg)}
 .hero2-photo .ph-note{text-align:center;color:var(--navy-500);font-weight:600;font-size:.9rem;padding:1rem}
 .hero2-photo .ph-note svg{width:44px;height:44px;color:var(--gold);margin-bottom:.5rem}
+.hero2-photo img{width:100%;height:100%;object-fit:contain;display:block}
 .hero2-dots{position:absolute;top:8%;right:2%;width:110px;height:80px;z-index:2;opacity:.5;background-image:radial-gradient(var(--gold) 2px,transparent 2px);background-size:16px 16px}
 .hero2-pip{position:absolute;right:-2%;bottom:4%;z-index:3;width:120px;height:120px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:var(--shadow-lg);background:linear-gradient(160deg,var(--navy-500),var(--navy));display:grid;place-items:center;color:var(--gold-soft)}
 .hero2-pip>svg{width:34px;height:34px}
