@@ -514,24 +514,31 @@ h3{font-size:1.35rem}
 .gmap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .gmap-grid .row2{grid-column:span 4;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:76%;margin:0 auto}
 .ccard{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:.2s;box-shadow:var(--shadow)}
-.ccard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold-soft)}
+.ccard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--cc)}
 .ccard .top{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
 .ccard .flag{width:44px;height:44px;border-radius:50%;overflow:hidden;border:2px solid var(--line);flex-shrink:0;background:var(--cream-2)}
 .ccard .flag img{width:100%;height:100%;object-fit:cover}
 .ccard .top b{font-family:var(--display);font-size:1.3rem;color:var(--navy);flex-grow:1}
-.ccard .go-c{width:30px;height:30px;border-radius:50%;background:var(--cream-2);display:grid;place-items:center;color:var(--navy);transition:.15s}
-.ccard:hover .go-c{background:var(--gold);color:var(--navy)}
+.ccard .go-c{width:30px;height:30px;border-radius:50%;background:var(--cc-wash);display:grid;place-items:center;color:var(--cc);transition:.15s}
+.ccard:hover .go-c{background:var(--cc);color:#fff}
 .ccard .go-c svg{width:16px;height:16px}
 .ccard .exam-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
-.ccard .ec{font-size:.74rem;font-weight:700;padding:.3rem .7rem;border-radius:99px;background:var(--gold-wash);color:var(--navy)}
+.ccard .ec{font-size:.74rem;font-weight:700;padding:.3rem .7rem;border-radius:99px;background:var(--cc-wash);color:var(--cc)}
 .ccard .oly{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;padding-top:1rem;border-top:1px solid var(--line-soft)}
-.ccard .tico{width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;flex-shrink:0}
+.ccard .tico{width:34px;height:34px;border-radius:50%;background:var(--cc);color:#fff;display:grid;place-items:center;flex-shrink:0}
 .ccard .tico svg{width:18px;height:18px}
-.ccard .oc{font-size:.72rem;font-weight:700;padding:.28rem .6rem;border-radius:99px;border:1px solid var(--line);color:var(--ink-soft)}
+.ccard .oc{font-size:.72rem;font-weight:700;padding:.28rem .6rem;border-radius:99px;background:var(--cc-wash);color:var(--cc)}
+.ccard.c-orange{--cc:#F59E0B;--cc-wash:#FEF3E2}
+.ccard.c-blue{--cc:#3B82F6;--cc-wash:#EAF2FE}
+.ccard.c-green{--cc:#10B981;--cc-wash:#E8FAF3}
+.ccard.c-purple{--cc:#8B5CF6;--cc-wash:#F2EEFE}
+.ccard.c-teal{--cc:#14B8A6;--cc-wash:#E6FBF8}
+.ccard.c-red{--cc:#F43F5E;--cc-wash:#FEECEE}
+.ccard.c-gold{--cc:var(--gold);--cc-wash:var(--gold-wash)}
 
 /* ---------- Testimonials v3 ---------- */
 .tsec{padding:80px 0;background:linear-gradient(180deg,#F4F5FA,#EEF0F7)}
-.tsec-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center;margin-bottom:36px}
+.tsec-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:start;margin-bottom:36px}
 .tsec-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:.5rem 1rem;font-weight:700;font-size:.8rem;color:var(--navy);box-shadow:var(--shadow)}
 .tsec-badge svg{width:16px;height:16px;color:var(--gold)}
 .tsec h2{font-size:clamp(2.2rem,4.5vw,3.4rem);margin:1.2rem 0 1rem;line-height:1.05}
@@ -539,7 +546,12 @@ h3{font-size:1.35rem}
 .tsec .tline{width:70px;height:4px;background:var(--gold);border-radius:99px;margin-bottom:1.2rem}
 .tsec .intro{color:var(--ink-soft);font-size:1.05rem;max-width:42ch}
 .tfeat{background:linear-gradient(150deg,#2A2320,#0E0C0B);border-radius:var(--r-lg);overflow:hidden;position:relative;min-height:300px;display:flex;align-items:flex-end;box-shadow:var(--shadow-lg)}
-.tfeat .ph{position:absolute;inset:0;background:linear-gradient(120deg,rgba(20,16,14,.35),rgba(20,16,14,.85)),linear-gradient(160deg,#5A4A3A,#2A2018)}
+.tfeat .ph{position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,rgba(14,12,11,.97) 0%,rgba(14,12,11,.9) 40%,rgba(14,12,11,.4) 62%,rgba(14,12,11,.05) 80%),
+    linear-gradient(160deg,#6E5A47,#382C21);
+  display:flex;align-items:center;justify-content:flex-end;padding:0 7% 0 0}
+.tfeat .ph-avatar{width:180px;height:180px;color:rgba(255,255,255,.22)}
 .tfeat .tf-body{position:relative;padding:32px;color:#fff;max-width:60%}
 .tfeat .tf-tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.74rem;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.85);margin-bottom:1rem}
 .tfeat .tf-tag .pl{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center}
@@ -554,10 +566,14 @@ h3{font-size:1.35rem}
 .tfeat .tf-play svg{width:26px;height:26px}
 .tmini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .tmini{background:var(--paper);border-radius:var(--r);padding:0;display:flex;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
-.tmini .tm-photo{width:38%;flex-shrink:0;background:linear-gradient(160deg,#D8CDBC,#C3B49C);position:relative}
-.tmini .tm-photo .play-s{position:absolute;left:12px;bottom:12px;width:34px;height:34px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--navy)}
+.tmini .tm-photo{width:38%;flex-shrink:0;background:linear-gradient(160deg,#D8CDBC,#C3B49C);position:relative;display:grid;place-items:center}
+.tmini .tm-avatar{width:56px;height:56px;color:rgba(255,255,255,.4)}
+.tmini .tm-photo .play-s{position:absolute;left:12px;bottom:12px;width:34px;height:34px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--navy);box-shadow:0 6px 14px -6px rgba(215,179,5,.7)}
 .tmini .tm-photo .play-s svg{width:15px;height:15px}
-.tmini .tm-body{padding:18px;flex-grow:1}
+.tmini .tm-body{padding:18px;flex-grow:1;position:relative}
+.tmini .tm-badge{position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);box-shadow:var(--shadow)}
+.tmini .tm-badge svg{width:13px;height:13px}
+.tmini .tm-badge.star{color:var(--navy)}
 .tmini .tm-q{color:var(--gold);font-size:1.3rem;line-height:.8}
 .tmini .tm-body p{font-size:.85rem;color:var(--ink);margin:.3rem 0 1rem}
 .tmini .tm-who{display:flex;align-items:center;gap:.5rem;border-top:1px solid var(--line-soft);padding-top:.7rem}
