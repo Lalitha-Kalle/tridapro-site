@@ -483,14 +483,24 @@ h3{font-size:1.35rem}
 .ai-tagline .g{color:var(--gold)}
 
 /* ---------- Journey v5 ---------- */
+.journey{position:relative}
 .journey-track{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative}
 .jstep{text-align:center;position:relative}
-.jstep .num{font-family:var(--display);font-size:1.5rem;font-weight:600;color:var(--gold);border:2px solid var(--gold-soft);background:var(--paper);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;margin:0 auto 1rem;position:relative;z-index:2}
-.jstep .jart{height:130px;border-radius:var(--r);background:linear-gradient(160deg,var(--cream-2),var(--gold-wash));border:1px solid var(--line);display:grid;place-items:center;margin-bottom:1rem;color:var(--navy);position:relative;overflow:hidden}
-.jstep .jart svg{width:52px;height:52px;color:var(--navy-500)}
-.jstep h4{font-size:1.02rem;margin-bottom:.4rem}
+.jstep .num{font-family:var(--display);font-size:1.35rem;font-weight:700;color:var(--jc);border:3px solid var(--jc);background:var(--paper);width:50px;height:50px;border-radius:50%;display:grid;place-items:center;margin:0 auto;position:relative;z-index:2}
+.jstep .j-dot{width:2px;height:20px;background:var(--jc);opacity:.55;margin:0 auto;position:relative;z-index:1}
+.jstep .jart{height:150px;border-radius:var(--r-lg);background:linear-gradient(160deg,var(--jc-wash),var(--paper) 75%);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:1.1rem;position:relative;overflow:hidden}
+.jstep .jart .ji{width:66px;height:66px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--jc-wash) 75%);display:grid;place-items:center;color:var(--jc);box-shadow:inset 0 0 0 1px var(--line),0 10px 20px -12px rgba(22,27,46,.25)}
+.jstep .jart svg{width:32px;height:32px}
+.jstep h4{font-size:1.02rem;margin-bottom:.4rem;color:var(--navy)}
 .jstep p{font-size:.85rem;color:var(--ink-soft)}
-.journey-line{position:absolute;top:26px;left:10%;right:10%;height:2px;background:repeating-linear-gradient(90deg,var(--gold-soft) 0 8px,transparent 8px 16px);z-index:1}
+.jstep.j-gold{--jc:var(--gold);--jc-wash:var(--gold-wash)}
+.jstep.j-blue{--jc:#3B82F6;--jc-wash:#EAF2FE}
+.jstep.j-purple{--jc:#8B5CF6;--jc-wash:#F2EEFE}
+.jstep.j-green{--jc:#10B981;--jc-wash:#E8FAF3}
+.journey-line{position:absolute;top:25px;left:10%;right:10%;height:2px;
+  background:linear-gradient(90deg,var(--gold) 0%,#3B82F6 25%,#8B5CF6 50%,#10B981 75%,var(--gold) 100%);
+  -webkit-mask-image:repeating-linear-gradient(90deg,#000 0 8px,transparent 8px 16px);
+  mask-image:repeating-linear-gradient(90deg,#000 0 8px,transparent 8px 16px);z-index:1}
 
 /* ---------- Global map v4 ---------- */
 .gmap-sec{padding:80px 0;position:relative;background:radial-gradient(circle at 15% 30%,rgba(215,179,5,.06),transparent 40%),radial-gradient(circle at 85% 20%,rgba(122,110,180,.06),transparent 40%),var(--cream)}
