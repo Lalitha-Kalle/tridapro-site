@@ -430,31 +430,37 @@ h3{font-size:1.35rem}
    ============================================================ */
 
 /* ---------- Hero v1 ---------- */
-.hero2{padding:34px 0 44px;position:relative;overflow:hidden}
-.hero2 .wrap{display:grid;grid-template-columns:.9fr 1.35fr;gap:40px;align-items:center}
-.hero2 h1{font-family:var(--body);font-size:clamp(2.3rem,4.6vw,3.9rem);line-height:1.05;letter-spacing:-.02em;font-weight:800}
+.hero2{padding:20px 0 28px;position:relative;overflow:hidden;isolation:isolate}
+.hero2::before{content:"";position:absolute;left:-46px;bottom:-56px;width:170px;height:170px;border:1.5px solid var(--gold-soft);border-radius:50%;opacity:.45;z-index:-1;pointer-events:none}
+.hero2::after{content:"";position:absolute;left:-14px;bottom:-92px;width:230px;height:230px;border:1.5px solid var(--line);border-radius:50%;opacity:.3;z-index:-1;pointer-events:none}
+.hero2 .wrap{display:grid;grid-template-columns:.78fr 1.42fr;gap:32px;align-items:center}
+.hero2 h1{font-family:var(--body);font-size:clamp(1.85rem,3.5vw,2.95rem);line-height:.98;letter-spacing:-.02em;font-weight:800}
 .hero2 h1 .g{color:var(--gold)}
-.hero2 .tick{width:56px;height:4px;background:var(--gold);border-radius:99px;margin:1.1rem 0}
-.hero2 .sub{font-size:1.18rem;color:var(--ink);font-weight:500;margin-bottom:.3rem}
+.hero2 .tick{width:38px;height:4px;background:var(--gold);border-radius:99px;margin:.6rem 0 .85rem}
+.hero2 .sub{font-size:1.03rem;color:var(--ink);font-weight:500;margin-bottom:.2rem}
 .hero2 .sub b{color:var(--navy);font-weight:700}
-.hero2 .sub2{font-size:1.05rem;color:var(--ink-soft);margin-bottom:1.5rem}
-.exam-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.8rem}
-.exam-chips span{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:.32rem .62rem;font-weight:700;font-size:.68rem;white-space:nowrap;color:var(--navy);box-shadow:0 1px 2px rgba(22,27,46,.04)}
-.hero2-cta{display:flex;gap:.7rem;flex-wrap:wrap}
-.hero2-cta .btn{padding:.8rem 1.25rem;font-size:.92rem}
+.hero2 .sub2{font-size:.9rem;color:var(--ink-soft);margin-bottom:1.1rem}
+.exam-chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.3rem}
+.exam-chips span{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:.28rem .55rem;font-weight:700;font-size:.64rem;white-space:nowrap;color:var(--navy);box-shadow:0 1px 2px rgba(22,27,46,.04)}
+.hero2-cta{display:flex;gap:.6rem;flex-wrap:wrap}
+.hero2-cta .btn{padding:.62rem 1.05rem;font-size:.85rem}
 .hero2-visual{position:relative}
-.hero2-blob{position:absolute;inset:-8% -4% -8% 6%;background:radial-gradient(circle at 60% 45%,var(--gold-soft),var(--gold-wash) 55%,transparent 72%);border-radius:50%;z-index:0}
-.hero2-photo{position:relative;z-index:1;aspect-ratio:677/490;display:grid;place-items:center}
+.hero2-blob{position:absolute;inset:-20% -16% -8% -4%;background:radial-gradient(circle at 68% 32%,var(--gold-soft),var(--gold-wash) 55%,transparent 74%);border-radius:50%;z-index:0}
+.hero2-photo{position:relative;z-index:1;aspect-ratio:1/1.03;display:grid;place-items:center}
 .hero2-photo .ph-note{text-align:center;color:var(--navy-500);font-weight:600;font-size:.9rem;padding:1rem}
 .hero2-photo .ph-note svg{width:44px;height:44px;color:var(--gold);margin-bottom:.5rem}
-.hero2-photo img{width:100%;height:100%;object-fit:cover;display:block;
-  -webkit-mask-image:radial-gradient(120% 100% at 58% 50%,#000 45%,transparent 96%);
-  mask-image:radial-gradient(120% 100% at 58% 50%,#000 45%,transparent 96%)}
-.hero2-dots{position:absolute;top:8%;right:2%;width:110px;height:80px;z-index:2;opacity:.5;background-image:radial-gradient(var(--gold) 2px,transparent 2px);background-size:16px 16px}
-.hero2-pip2{position:absolute;right:-2%;bottom:4%;z-index:3;width:120px;height:120px}
-.hero2-pip2 img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%;border:5px solid #fff;box-shadow:var(--shadow-lg);background:var(--paper)}
-.hero2-cam{position:absolute;top:-6px;right:-6px;width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;box-shadow:var(--shadow-lg);z-index:1}
-.hero2-cam svg{width:16px;height:16px}
+.hero2-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 26%;display:block;
+  -webkit-mask-image:radial-gradient(128% 108% at 60% 45%,#000 55%,transparent 98%);
+  mask-image:radial-gradient(128% 108% at 60% 45%,#000 55%,transparent 98%)}
+.hero2-dots{position:absolute;top:1%;right:-3%;width:150px;height:110px;z-index:2;opacity:.55;background-image:radial-gradient(var(--gold) 2px,transparent 2px);background-size:16px 16px}
+.hero2-pip2{position:absolute;right:-6%;bottom:-1%;z-index:3;width:158px;height:158px}
+.hero2-pip2 img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%;border:6px solid #fff;box-shadow:var(--shadow-lg);background:var(--paper)}
+.hero2-cam{position:absolute;top:-10px;right:-10px;width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;box-shadow:var(--shadow-lg);z-index:1}
+.hero2-cam svg{width:20px;height:20px}
+
+/* homepage-only overrides: dots/pip2 sit directly on the full-bleed hero, not the boxed visual */
+.hero2 > .hero2-dots{top:6%;right:4%;left:auto;bottom:auto;z-index:0}
+.hero2 > .hero2-pip2{right:5%;bottom:9%;z-index:1}
 
 /* ---------- AI section v2 ---------- */
 .ai-sec{padding:80px 0;background:var(--mist);position:relative;overflow:hidden}
@@ -609,6 +615,10 @@ h3{font-size:1.35rem}
 
 @media(max-width:960px){
   .hero2 .wrap{grid-template-columns:1fr;gap:34px}
+  .hero2-dots{width:110px;height:80px;top:2%;right:0}
+  .hero2-pip2{width:120px;height:120px;right:0;bottom:2%}
+  .hero2-cam{width:34px;height:34px}
+  .hero2-cam svg{width:17px;height:17px}
   .page-hero.has-visual .wrap{grid-template-columns:1fr;gap:28px}
   .ai-stage{grid-template-columns:1fr;gap:20px}
   .ai-link{flex-basis:24px}
@@ -620,6 +630,9 @@ h3{font-size:1.35rem}
   .tmini-grid{grid-template-columns:1fr}
 }
 @media(max-width:620px){
+  .hero2::before,.hero2::after{display:none}
+  .hero2-pip2{width:96px;height:96px}
+  .hero2-dots{width:84px;height:64px}
   .ai-head h2{font-size:5.8vw}
   .journey-track{grid-template-columns:1fr}
   .gmap-grid,.gmap-grid .row2{grid-template-columns:1fr}
