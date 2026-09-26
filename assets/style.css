@@ -211,18 +211,18 @@ h3{font-size:1.35rem}
 .stat .l{font-size:.84rem;color:var(--ink-soft);margin-top:.4rem;font-weight:500}
 
 /* ---------- Stats strip v2 (icon stats) ---------- */
-.stats2{display:grid;grid-template-columns:repeat(4,auto);justify-content:center;column-gap:1.6rem}
-.stat2{text-align:center;padding:0;position:relative;width:150px}
-.stat2:not(:last-child)::after{content:"";position:absolute;right:-.8rem;top:8px;bottom:8px;width:1px;background:var(--line)}
-.s2-icon{position:relative;width:78px;height:78px;margin:0 auto 1.15rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.stats2{display:grid;grid-template-columns:repeat(4,auto);justify-content:center;column-gap:1.9rem}
+.stat2{text-align:center;padding:0;position:relative;width:165px}
+.stat2:not(:last-child)::after{content:"";position:absolute;right:-.95rem;top:8px;bottom:8px;width:1px;background:var(--line)}
+.s2-icon{position:relative;width:88px;height:88px;margin:0 auto 1.15rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
 .s2-icon::before{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px dotted currentColor;opacity:.4}
-.s2-icon svg{width:32px;height:32px;position:relative}
-.s2-icon img{width:32px;height:32px;position:relative;object-fit:contain}
+.s2-icon svg{width:36px;height:36px;position:relative}
+.s2-icon img{width:36px;height:36px;position:relative;object-fit:contain}
 .s2-dot{position:absolute;top:0;right:4px;width:9px;height:9px;border-radius:50%;background:currentColor}
-.s2-n{font-family:var(--body);font-size:2.9rem;font-weight:800;line-height:1}
+.s2-n{font-family:var(--body);font-size:3.1rem;font-weight:800;line-height:1}
 .s2-n em{font-style:normal;font-size:.5em;font-weight:700;margin-left:.15em;vertical-align:baseline}
-.s2-bar{width:34px;height:3px;border-radius:3px;margin:.6rem auto .75rem;background:currentColor;opacity:.55}
-.s2-l{font-size:.92rem;color:var(--navy);font-weight:500;line-height:1.45}
+.s2-bar{width:38px;height:3px;border-radius:3px;margin:.6rem auto .75rem;background:currentColor;opacity:.55}
+.s2-l{font-size:.98rem;color:var(--navy);font-weight:500;line-height:1.45}
 .s2-blue{color:#2E7DD1}
 .s2-green{color:#17976F}
 .s2-orange{color:var(--gold)}
