@@ -346,6 +346,7 @@ h3{font-size:1.35rem}
   display:grid;place-items:center;color:var(--pc);box-shadow:inset 0 0 0 1px var(--line),0 10px 22px -12px rgba(22,27,46,.25);
 }
 .program .p-icon svg{width:44px;height:44px}
+.program .p-icon img{width:62px;height:62px;object-fit:contain}
 .program h3{font-size:1.22rem;margin-bottom:.5rem;color:var(--navy)}
 .program .p-skills{color:var(--pc);font-weight:700;font-size:.86rem;line-height:1.5;margin-bottom:.8rem}
 .program .p-uline{width:32px;height:3px;border-radius:3px;background:var(--pc);opacity:.55;margin:0 auto .95rem}
